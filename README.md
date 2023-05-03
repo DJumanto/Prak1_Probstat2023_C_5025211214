@@ -16,7 +16,7 @@ distb <- dbinom(x, n, p)
 print(distb)
 ```
 Result:
-![Hasil]()
+![Hasil](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/A.png?raw=true)
 
 ### B. Berapa probabilitas bahwa tepat tiga bayi di antaranya berjenis kelamin lakilaki?
 
@@ -25,7 +25,7 @@ probTigaLakiLaki <- dbinom(3, n, p)
 print(probTigaLakiLaki)
 ```
 Result:
-![Hasil 2]()
+![Hasil 2](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/B.png?raw=true)
 
 ### C. Berapa probabilitas bahwa kurang dari tiga bayi di antaranya berjenis kelamin laki-laki?
 
@@ -34,7 +34,7 @@ probKurangDuaLakiLaki <- pbinom(2, n, p)
 print(probKurangDuaLakiLaki)
 ```
 Result:
-![Hasil 3]()
+![Hasil 3](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/C.png?raw=true)
 
 ###  D. Berapa probabilitas bahwa tiga atau lebih bayi di antaranya berjenis kelamin laki-laki?
 
@@ -43,7 +43,7 @@ probTigaAtauLebihLakiLaki <- 1 - probKurangDuaLakiLaki
 print(probTigaAtauLebihLakiLaki)
 ```
 Result:
-![Hasil 4]()
+![Hasil 4](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/D.png?raw=true)
 
 ### E. Berapa nilai harapan dan simpangan baku banyak bayi laki-laki?
 
@@ -53,7 +53,7 @@ simpanganBaku <- sqrt((1-p) * harapan)
 cat("Harapan: ",harapan," Simpangan Baku:", simpanganBaku)
 ```
 Result:
-![Hasil 5]()
+![Hasil 5](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/E.png?raw=true)
 
 ### F. Gambarkan histogram pendistribusian banyak bayi laki-laki!
 
@@ -61,7 +61,7 @@ Result:
 hist(rbinom(100, n, p), main = "Histogram Distribusi Bayi Laki-laki", xlab = "Banyak Bayi Laki-Laki", ylab = "Frekuensi")
 ```
 Result:
-![Hasil 6]()
+![Hasil 6](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%201/F.png?raw=true)
 
 ## Nomor 2
 Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik
@@ -77,7 +77,7 @@ print(distb)
 plot(type="l", distb, main="Distribusi Kematian Kanker Tulang", xlab="Jumlah Kematian", ylab="Probabilitas")
 ```
 Result:
-![Hasil 7]()
+![Hasil 7](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/A.png?raw=true)
 
 ### B. Ada 4 kematian akibat kanker tulang yang dilaporkan di kalangan pekerja pabrik ban, apakah itu peristiwa yang tidak biasa? Hitung probabilitas berdasarkan distribusi yang telah dipilih.
 
@@ -86,7 +86,7 @@ probs <- dpois(4,lambd)
 cat("Probabilitas: ", probs)
 ```
 Result:
-![Hasil 8]()
+![Hasil 8](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/B.png?raw=true)
 
 ### C. Berapa peluang paling banyak 4 kematian akibat kanker tulang?
 
@@ -95,7 +95,7 @@ probs <- ppois(4, lambd)
 cat("Peluang Paling Banyak 4 Kematian Akibat Kangker Tulang: ", probs)
 ```
 Result:
-![Hasil 9]()
+![Hasil 9](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/C.png?raw=true)
 
 ### D. Berapa peluang lebih dari 4 kematian akibat kanker tulang?
 
@@ -104,7 +104,7 @@ probs <- 1-(probs)
 cat("Peluang Kematian Lebih Dari 4 Akibat Kanker Tulang: ", probs)
 ```
 Result:
-![Hasil 10]()
+![Hasil 10](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/D.png?raw=true)
 
 ### E. Berdasarkan distribusi yang telah dipilih, berapakah nilai harapan dan standar deviasi banyak kematian akibat kanker tulang untuk pekerja pabrik ban?
 
@@ -114,7 +114,7 @@ standardDeviasi <- sqrt(harapan)
 cat("Harapan: ", harapan, "; Standard Deviasi: ", standardDeviasi)
 ```
 Result:
-![Hasil 11]()
+![Hasil 11](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/E.png?raw=true)
 
 ### F. Gambarkan histogram pendistribusian banyak banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
 
@@ -123,7 +123,7 @@ n <- 10
 hist(rpois(n, lambd),ylab="Frekuensi", main="Histogram Distribusi Kematian Akibat Kanker Tulang")
 ```
 Result:
-![Hasil 12]()
+![Hasil 12](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/F.png?raw=true)
 
 ### G. Gunakan simulasi untuk memeriksa hasil sebelumnya.
 
@@ -133,7 +133,7 @@ res <- rpois(n,lambd)
 print(res)
 ```
 Result:
-![Hasil 13]()
+![Hasil 13](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%202/G.png?raw=true)
 
 ### H. Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda.
 
@@ -152,7 +152,7 @@ v <- 10
 dchisq(x, v)
 ```
 Result:
-![Hasil 14]()
+![Hasil 14](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%203/A.png?raw=true)
 
 ### B. Histogram dari distribusi Chi-Square dengan 500 data acak.
 
@@ -161,7 +161,7 @@ n <- 500
 hist(rchisq(n,v),main="Histogram Distribusi Chi-Square", xlab="X", ylab="V")
 ```
 Result:
-![Hasil 15]()
+![Hasil 15](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%203/B.png?raw=true)
 
 ### C. Nilai rataan (μ) dan varian (σ²) dari distribusi Chi-Square.
 
@@ -171,7 +171,7 @@ variant <- 2 * v
 cat("μ: ", μ, "; Varian: ", variant)
 ```
 Result:
-![Hasil 16]()
+![Hasil 16](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%203/C.png?raw=true)
 
 ## Nomor 4
 Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5.
@@ -202,7 +202,7 @@ print(p)
 plot(gen)
 ```
 Result:
-![Hasil 17]()
+![Hasil 17](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%204/A.png?raw=true)
 
 ### B. Gambarkan histogram dari distribusi Normal dengan breaks 50
 
@@ -211,7 +211,7 @@ breaks <- 50
 hist(gen, breaks, main = "Histogram Distribusi Normal")
 ```
 Result:
-![Hasil 18]()
+![Hasil 18](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%204/B.png?raw=true)
 
 ### C. Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal.
 
@@ -220,7 +220,7 @@ varian <- (sd(gen)) ^ 2
 print(varian)
 ```
 Result:
-![Hasil 19]()
+![Hasil 19](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%204/C.png?raw=true)
 
 ## Nomor 5
 Kerjakanlah menggunakan distribusi T-Student.
@@ -234,7 +234,7 @@ cat("Probabilitas 6 derajat kebebasan dan x < -2.34: ", prob)
 ```
 
 Result:
-![Hasil 20]()
+![Hasil 20](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/A.png?raw=true)
 
 ### B. Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
 
@@ -244,7 +244,7 @@ probGreaterThan_134 <- pt(q, df, lower.tail = FALSE)
 cat("Probabilitas 6 derajat kebebasan dan x > 1.34: ", probGreaterThan_134)
 ```
 Result:
-![Hasil 21]()
+![Hasil 21](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/B.png?raw=true)
 
 ### C. Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan?
 
@@ -254,7 +254,7 @@ probAround <- (pt(-1.23, df) + (pt(1.23, df, lower.tail = FALSE)))
 print(probAround)
 ```
 Result:
-![Hasil 22]()
+![Hasil 22](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/C.png?raw=true)
 
 ### D. Berapa probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan?
 
@@ -264,7 +264,7 @@ probAround_094 <- (pt(0.94, df) - pt(-0.94, df))
 print(probAround_094)
 ```
 Result:
-![Hasil 24]()
+![Hasil 24](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/D.png?raw=true)
 
 ### E. Berapa nilai t-score dengan 5 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di sebelah kiri t-score tersebut?
 
@@ -274,7 +274,7 @@ t_score <- qt(0.0333, df)
 print(t_score)
 ```
 Result:
-![Hasil 25]()
+![Hasil 25](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/E.png?raw=true)
 
 ### F. Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125 satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
 
@@ -284,7 +284,7 @@ t_score <- qt(0.125, df, lower.tail=FALSE)
 print(t_score)
 ```
 Result:
-![Hasil 26]()
+![Hasil 26](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/F.png?raw=true)
 
 ### G. Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut?
 
@@ -294,7 +294,7 @@ t_score <- qt(0.75, df=df, lower.tail=TRUE)
 print(t_score)
 ```
 Result:
-![Hasil 27]()
+![Hasil 27](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/G.png?raw=true)
 
 ### H. Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut?
 
@@ -306,4 +306,4 @@ cat("t-score Positive: ", t_score_positive)
 cat("t-score Negative: ", t_score_negative)
 ```
 Result:
-![Hasil 28]()
+![Hasil 28](https://github.com/DJumanto/Prak1_Probstat2023_C_5025211214/blob/main/Nomor%205/H.png?raw=true)
