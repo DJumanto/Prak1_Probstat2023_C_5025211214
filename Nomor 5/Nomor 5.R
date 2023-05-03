@@ -33,21 +33,21 @@ print(t_score)
 # F. Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125
 # satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
 df <- 25
-t_score <- qt(0.125, df, lower.tail=FALSE)
+t_score <- qt(1 - 0.125, df, lower.tail=FALSE)
 print(t_score)
 
 # G. Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75
 # satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari
 # nilai t-score tersebut?
+x <- 0.75 + ((1-0.75)/2)
 df <- 11
-t_score <- qt(0.75, df=df, lower.tail=TRUE)
+t_score <- qt(x, df=df, lower.tail=TRUE)
 print(t_score)
 
 # H. Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333
 # satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan
 # negatif dari nilai t-score tersebut?
+x <- (1 - (0.0333/2))
 df <- 23
-t_score_positive <- qt(0.01665, df=23, lower.tail=FALSE)
-t_score_negative <- qt(0.01665, df=23, lower.tail=TRUE)
-cat("t-score Positive: ", t_score_positive)
-cat("t-score Negative: ", t_score_negative)
+t_score <- qt(x, df=23)
+cat("t-score: ", t_score)
