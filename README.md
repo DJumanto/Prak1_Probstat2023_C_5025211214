@@ -201,7 +201,6 @@ p <- pnorm(runif(1, mean, max(gen)), mean, sd) - pnorm(runif(1, min(gen), mean),
 print(p)
 plot(gen)
 ```
-
 Result:
 ![Hasil 17]()
 
@@ -274,6 +273,8 @@ df <- 5
 t_score <- qt(0.0333, df)
 print(t_score)
 ```
+Result:
+![Hasil 25]()
 
 ### F. Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125 satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
 
@@ -282,6 +283,8 @@ df <- 25
 t_score <- qt(0.125, df, lower.tail=FALSE)
 print(t_score)
 ```
+Result:
+![Hasil 26]()
 
 ### G. Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut?
 
@@ -290,6 +293,8 @@ df <- 11
 t_score <- qt(0.75, df=df, lower.tail=TRUE)
 print(t_score)
 ```
+Result:
+![Hasil 27]()
 
 ### H. Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut?
 
@@ -300,3 +305,5 @@ t_score_negative <- qt(0.01665, df=23, lower.tail=TRUE)
 cat("t-score Positive: ", t_score_positive)
 cat("t-score Negative: ", t_score_negative)
 ```
+Result:
+![Hasil 28]()

@@ -30,12 +30,11 @@ cat("Harapan: ", harapan, "; Standard Deviasi: ", standardDeviasi)
 
 # F. Gambarkan histogram pendistribusian banyak banyak kematian akibat kanker
 # tulang untuk pekerja pabrik ban.
-n <- 1000
+n <- 10
 hist(rpois(n, lambd),ylab="Frekuensi", main="Histogram Distribusi Kematian Akibat Kanker Tulang")
 
-# D. Gunakan simulasi untuk memeriksa hasil sebelumnya.
+# G. Gunakan simulasi untuk memeriksa hasil sebelumnya.
+set.seed(123321)
 res <- rpois(n,lambd)
 print(res)
 
-# Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda.
-# Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda.

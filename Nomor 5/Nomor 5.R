@@ -51,8 +51,3 @@ t_score_positive <- qt(0.01665, df=23, lower.tail=FALSE)
 t_score_negative <- qt(0.01665, df=23, lower.tail=TRUE)
 cat("t-score Positive: ", t_score_positive)
 cat("t-score Negative: ", t_score_negative)
-
-  
-
-
-  
